@@ -1,0 +1,307 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  height: 100vh;
+  background-color: #424d83;
+}
+
+.header .header_logo {
+  padding-top: 50px;
+  padding-left: 142px;
+  margin: right auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.header .header_nav {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header .header_nav li {
+  display: inline-block;
+  text-align: right;
+  text-decoration: none;
+  position: relative;
+}
+
+.header .header_nav a {
+  font-family: Nunito;
+  font-size: 20px;
+  margin-left: 71px;
+  text-decoration: none;
+  letter-spacing: 0.6px;
+  text-align: left;
+  color: #fff;
+  font-weight: bold;
+}
+
+.header .header_nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .header_nav .header_nav_items_login {
+  margin-left: 91px;
+  width: 123px;
+  padding-bottom: 14px;
+  padding-right: 5px;
+  padding-left: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: white;
+  padding-top: 13px;
+  border-radius: 5px;
+}
+
+.header .header_nav .header_nav_items_login img {
+  height: 16px;
+  background-color: white;
+}
+
+.header .header_nav .header_nav_items_login a {
+  color: #93a5ff;
+  background-color: white;
+  margin-left: 0px;
+}
+
+.header .header_nav img {
+  margin-left: 18px;
+}
+
+.header .header_nav h4 {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  padding-top: 50px;
+  padding-left: 164px;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 49px;
+  font-family: Roboto;
+  font-weight: bold;
+  margin-bottom: 30px;
+  letter-spacing: 0.74px;
+  color: #fff;
+}
+
+.header h3 {
+  margin-top: 14px;
+  margin-bottom: 53px;
+  opacity: 0.8;
+  font-family: Nunito;
+  font-size: 28px;
+  letter-spacing: 0.42px;
+  text-align: left;
+  color: #fff;
+}
+
+.header .header_titles {
+  margin-top: 190px;
+  margin-left: 142px;
+}
+
+.header .header_titles .header_titles_illustration {
+  width: 50%;
+  margin-top: -100px;
+  margin-right: 50px;
+  opacity: 0.83;
+  float: right;
+}
+
+.header .header_titles .header_titles_form {
+  width: 45%;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .header_titles .header_titles_form_search {
+  width: 340px;
+  height: 55px;
+  border-radius: 5px;
+  background-color: #384170;
+}
+
+.header .header_titles ::-webkit-input-placeholder {
+  font-size: 20px;
+  text-align: left;
+  color: #fff;
+  font-family: Nunito;
+}
+
+.header .header_titles :-ms-input-placeholder {
+  font-size: 20px;
+  text-align: left;
+  color: #fff;
+  font-family: Nunito;
+}
+
+.header .header_titles ::-ms-input-placeholder {
+  font-size: 20px;
+  text-align: left;
+  color: #fff;
+  font-family: Nunito;
+}
+
+.header .header_titles ::placeholder {
+  font-size: 20px;
+  text-align: left;
+  color: #fff;
+  font-family: Nunito;
+}
+
+.header .header_titles .header_titles_form_com {
+  width: 120px;
+  height: 55px;
+  border-radius: 5px;
+  background-color: #384170;
+  padding-right: 20px;
+  font-size: 20px;
+  text-align: left;
+  color: #fff;
+  font-family: Nunito;
+}
+
+.header .header_titles .header_titles_form_submit {
+  width: 222px;
+  height: 62px;
+  border-radius: 5px;
+  background-color: #93a5ff;
+  color: white;
+  margin-top: 5px;
+  margin-left: 31px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 2.06;
+  letter-spacing: 0.25px;
+  text-align: center;
+  font-family: Nunito;
+}
+
+.first {
+  background-color: red;
+  height: 100vh;
+  width: 73%;
+  margin: 0 auto;
+}
+
+.first .first_title h2 {
+  padding-top: 81px;
+  font-size: 35px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.53px;
+  text-align: center;
+  color: #2e2e2e;
+  margin-bottom: 10px;
+  font-family: Nunito;
+}
+
+.first .first_title h3 {
+  opacity: 0.8;
+  font-family: Nunito;
+  font-size: 28px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-align: center;
+  color: #2e2e2e;
+  margin-bottom: 35px;
+}
+
+.first .first_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=main.css.map */
